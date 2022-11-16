@@ -107,6 +107,54 @@ article:nth-of-type(2){
 	background: linear-gradient(0deg, rgba(111,106,106,1) 0%, rgba(204,65,73,1) 54%);
 }
 
+/* Style rules for the figures */
+.frame {
+	position: relative;
+	height: auto;
+	width: auto;
+	margin: 0 auto;
+}
+  
+.frame img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+.frame img {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-direction: alternate;
+}
+
+.frame img:nth-of-type(1) {
+	animation-delay: 0s;
+}
+
+.frame img:nth-of-type(2) {
+	animation-delay: 2s;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+  
 /* Style rules for footer content*/
 footer p{
 	font-size: 0.75em;
