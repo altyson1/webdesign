@@ -7,7 +7,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 
 	/* Style rules for body and images*/
 body {
-	background-image: linear-gradient(to right, red , yellow);
+	background-color: #616161;
 }
 img, video{
 	max-width: 100%;
@@ -24,7 +24,7 @@ img, video{
 /* Style rule for header*/
 header{
 		top: 0;
-		background-color: #000;
+		background-color: #616161;
 		height: 190px;
 }
 
@@ -70,6 +70,21 @@ nav li a{
 }
 .tablet-desktop{
 	display: none;
+}
+
+/*Form style rules*/
+fieldset, input{
+	margin-bottom: 2%
+}
+
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
 }
 	
 	/* Style rules for main content*/
