@@ -100,7 +100,9 @@ main{
 
 video{
 	margin: 0 auto 4%;
+	width: 60%;
 }
+
 
 
 /* service article sections*/
@@ -373,8 +375,13 @@ footer p a{
 	.frame:hover{
 		opacity: 1;
 		box-shadow: 8px 8px 10px #808080;
+		animation: mymove1 2s;
 	}
 	
+	@keyframes mymove1 {
+		50% {transform: rotate(90deg);}
+	}
+	  
 	/* Desktop viewport: style rules for form elements*/
 	form{
 		width: auto;
@@ -394,9 +401,9 @@ footer p a{
 	}
 	
 	.map{
-	border: 8px solid #616161;
-	width:50%;
-	height: 23%;
-}
+		border: 8px solid #616161;
+		width:50%;
+		height: 23%;
+	}
 
 }
