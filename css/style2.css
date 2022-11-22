@@ -1,5 +1,5 @@
 /* CSS Reset*/
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video,form{
 	margin: 0;
 	padding:0;
 	border: 0;
@@ -7,7 +7,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 
 	/* Style rules for body and images*/
 body {
-	background-image: linear-gradient(to right, red , yellow);
+	background-color: #616161;
 }
 img, video{
 	max-width: 100%;
@@ -24,7 +24,7 @@ img, video{
 /* Style rule for header*/
 header{
 		top: 0;
-		background-color: #000;
+		background-color: #616161;
 		height: 190px;
 }
 
@@ -64,12 +64,30 @@ nav li a{
 .mobile{
 	display: block;
 }
+.mobile-contact{
+	display: block;
+}
 
 .tablet-desktop img{
 	display: none;
 }
 .tablet-desktop{
 	display: none;
+}
+
+/*Form style rules*/
+fieldset, input{
+	margin-bottom: 2%
+}
+
+fieldset legend{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label{
+	display: block;
+	padding-top: 3%;
 }
 	
 	/* Style rules for main content*/
@@ -82,7 +100,9 @@ main{
 
 video{
 	margin: 0 auto 4%;
+	width: 60%;
 }
+
 
 
 /* service article sections*/
@@ -141,6 +161,12 @@ footer p a{
 	position: relative;
 	max-width: 450px;
 	margin: 2%;
+}
+
+.map{
+	border: 8px solid #000;
+	width:95%;
+	height: 50%;
 }
 
 
@@ -255,6 +281,35 @@ footer p a{
 		margin:0 auto;
 	}
 	
+
+	/* Add a hover effect if you want */
+	.fa:hover {
+  opacity: 0.7;
+	}
+	
+	.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 45px;
+  text-align: left;
+	}
+
+	/* Set a specific color for each brand */
+
+	/* Facebook */
+	.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding:5px;
+	}
+
+	/* Twitter */
+	.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding:5px;
+	}
+	
 }
 
 /* Media query for desktop viewport */
@@ -320,8 +375,13 @@ footer p a{
 	.frame:hover{
 		opacity: 1;
 		box-shadow: 8px 8px 10px #808080;
+		animation: mymove1 2s;
 	}
 	
+	@keyframes mymove1 {
+		50% {transform: rotate(90deg);}
+	}
+	  
 	/* Desktop viewport: style rules for form elements*/
 	form{
 		width: auto;
@@ -333,8 +393,17 @@ footer p a{
 		grid-gap: 20px;
 	}
 	
-	.btn{
-		grid-column: 1 / span 3;
+	.btn2{
+		grid-column: 1 / span 2;
+	}
+	.btn1{
+		grid-column: 1/ span 3;
+	}
+	
+	.map{
+		border: 8px solid #616161;
+		width:50%;
+		height: 23%;
 	}
 
 }
